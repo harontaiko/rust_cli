@@ -9,7 +9,6 @@
 //mod variables;
 //mod data_types;
 mod strings;
-
 fn main() {
     strings::run();
 }

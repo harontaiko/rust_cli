@@ -1,17 +1,14 @@
 pub fn run() {
     //primitive and Growable
-    let immutable_string = "immutable String";
+    let _immutable_string = "Immutable String";
 
-    let growable_string = String::from("growable string");
+    let mut mutable_string = String::from("Mutable String");
 
-    let mut growable_mutable_string = String::from("growable Mutable strin");
+    //push to mutable 'char'
+    mutable_string.push('i');
 
-    //string length
-    let length_growable = growable_string.len();
+    //push string
+    mutable_string.push_str("s pushed here");
 
-    //push to growable string, must be mutable
-    growable_mutable_string.push('g');
-
-    println!("{:?}\n", (immutable_string, growable_string));
-    println!("Length of Growable: {}, {:4}", length_growable, growable_mutable_string);
+    println!("{}", mutable_string.chars().rev().collect());
 }

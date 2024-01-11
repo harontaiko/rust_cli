@@ -1,6 +1,6 @@
 pub fn run () {
 
-    //statically typed but usually infers based on usage
+    //statically typed but usually infers based on usage and var
 
     //default:i32
     let index = 1;
@@ -21,11 +21,13 @@ pub fn run () {
     //expression
     let is_less: bool = (var1 * var2) < 0;
 
+    let is_greater: bool = ( var1/2 ) > 1;
+
     //char unicode
     let alphabet1 = 'a';
 
     let alphabet_multiple = '\u{1F600}';
 
-    println!("{:?}", (index, index2, y, is_logged_in, is_less, alphabet1, alphabet_multiple));
+    println!("{:?}", (index, index2, y, is_logged_in, is_less, is_greater, alphabet1, alphabet_multiple));
 
 }
