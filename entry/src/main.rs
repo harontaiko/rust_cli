@@ -8,8 +8,11 @@
 //mod print;
 //mod variables;
 //mod data_types;
-mod strings;
+//mod strings;
+//mod tuples;
+mod arrays;
+
 fn main() {
-    strings::run();
+    arrays::run();
 }
 
