@@ -15,7 +15,7 @@ pub fn run() {
     prime_nums_mut[2] = 29;
 
     //size is calculated by passing a reference of mutable primnums array
-    println!("Mutable Array has a length of {} and uses {} bytes of memory", prime_nums_mut.len(), mem::size_of_val(&prime_nums_mut));
+    println!("Mutable Array with a length of {} and uses {} bytes of memory", prime_nums_mut.len(), mem::size_of_val(&prime_nums_mut));
 
     //slice
     let slice: &[i32] = &prime_nums_mut[3..4];
