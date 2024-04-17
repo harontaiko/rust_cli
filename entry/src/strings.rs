@@ -10,6 +10,8 @@ pub fn run() {
     //push string
     mutable_string.push_str("s pushed here");
 
+    //test
+
     //testing assertion
     assert_eq!(2, mutable_string.len());
 
